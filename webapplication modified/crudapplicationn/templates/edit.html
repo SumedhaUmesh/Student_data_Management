@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form method="POST" class="post-form" action="/update/{{employee.id}}">
+    {% csrf_token %}
+    <div class="container">
+        <br>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-1 col-form-label"></label>
+        <div class="col-sm-4">
+            <h3>Update Details</h3>
+        </div>
+    </div>
+     <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Student Roll_no:</label>
+        <div class="col-sm-4">
+            <input type="text" name="roll_no" id="id_roll_no" required maxlength="20" value="{{ employee.roll_no }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Name:</label>
+        <div class="col-sm-4">
+            <input type="text" name="name" id="id_name" required maxlength="100" value="{{ employee.name }}"/>
+        </div>
+    </div>
+     <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Email:</label>
+        <div class="col-sm-4">
+            <input type="text" name="email" id="id_email" required maxlength="254" value="{{ employee.email }}"/>
+        </div>
+    </div>
+     <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Contact:</label>
+        <div class="col-sm-4">
+            <input type="text" name="contact" id="id_contact" required maxlength="15" value="{{ employee.contact }}"/>
+        </div>
+    </div>
+        <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Father's name:</label>
+        <div class="col-sm-4">
+            <input type="text" name="father_name" id="id_father_name" required maxlength="15" value="{{ employee.father_name }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Occupation:</label>
+        <div class="col-sm-4">
+            <input type="text" name="occupation" id="id_occupation" required maxlength="15" value="{{ employee.occupation }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> address:</label>
+        <div class="col-sm-4">
+            <input type="text" name="address" id="id_address" required maxlength="200" value="{{ employee.address }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> I-IA-theory:</label>
+        <div class="col-sm-4">
+            <input type="text" name="ia1_th" id="id_ia1_th" required maxlength="200" value="{{ employee.ia1_th }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> I-IA-practical:</label>
+        <div class="col-sm-4">
+            <input type="text" name="ia1_pr" id="id_ia1_pr" required maxlength="200" value="{{ employee.ia1_pr }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> I-IA-Attendance:</label>
+        <div class="col-sm-4">
+            <input type="text" name="ia1_att" id="id_ia1_att" required maxlength="200" value="{{ employee.ia1_att }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">  II-IA-theory:</label>
+        <div class="col-sm-4">
+            <input type="text" name=" ia2_th" id="id_ia2_th" required maxlength="200" value="{{ employee.ia2_th }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">  II-IA-practical:</label>
+        <div class="col-sm-4">
+            <input type="text" name=" ia2_pr" id="id_ia2_pr" required maxlength="200" value="{{ employee.ia2_pr }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> II-IA-Attendance:</label>
+        <div class="col-sm-4">
+            <input type="text" name="ia2_att" id="id_ia2_att" required maxlength="200" value="{{ employee.ia2_att }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">  III-IA-theory:</label>
+        <div class="col-sm-4">
+            <input type="text" name="ia3_th " id="id_ia3_th" required maxlength="200" value="{{ employee.ia3_th }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> III-IA-practical:</label>
+        <div class="col-sm-4">
+            <input type="text" name=" ia3_pr" id="id_ia3_pr" required maxlength="200" value="{{ employee.ia3_pr }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> III-IA-Attendance:</label>
+        <div class="col-sm-4">
+            <input type="text" name="ia3_att" id="id_ia3_att" required maxlength="200" value="{{ employee.ia3_att }}"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> University Exam %:</label>
+        <div class="col-sm-4">
+            <input type="text" name=" university_exam %" id="id_university_exam" required maxlength="200" value="{{ employee.university_exam }}"/>
+        </div>
+    </div>
+     <div class="form-group row">
+        <label class="col-sm-1 col-form-label"></label>
+        <div class="col-sm-4">
+            <button type="submit" class="btn btn-success">Update</button>
+        </div>
+    </div>
+
+
+</form>
+
+</body>
+</html>

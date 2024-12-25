@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form method="POST" class="'post-form" action="/emp">
+    { % csrf_token %}
+    <div class="container">
+        <br>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-1 col-form-label"></label>
+        <div class="col-sm-4">
+            <h3>Enter Details</h3>
+        </div>
+    </div>
+        <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Roll no:</label>
+        <div class="col-sm-4">
+            {{ form.roll_no }}
+        </div>
+    </div>
+        <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Name:</label>
+        <div class="col-sm-4">
+            {{ form.name }}
+        </div>
+    </div>
+        <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Email:</label>
+        <div class="col-sm-4">
+            {{ form.email  }}
+        </div>
+    </div>
+        <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Contact:</label>
+        <div class="col-sm-4">
+            {{ form.contact }}
+        </div>
+    </div>
+        <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Father's name:</label>
+        <div class="col-sm-4">
+            {{ form.father_name }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Occupation:</label>
+        <div class="col-sm-4">
+            {{ form.occupation }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Address:</label>
+        <div class="col-sm-4">
+            {{ form.address }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> I-IA-theory:</label>
+        <div class="col-sm-4">
+            {{ form.ia1_th }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> I-IA-practical:</label>
+        <div class="col-sm-4">
+            {{ form.ia1_pr }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> I-IA-Attendance:</label>
+        <div class="col-sm-4">
+            {{ form.ia1_att }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> II-IA-theory:</label>
+        <div class="col-sm-4">
+            {{ form.ia2_th }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> II-IA-practical:</label>
+        <div class="col-sm-4">
+            {{ form.ia2_pr }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> II-IA-Attendance:</label>
+        <div class="col-sm-4">
+            {{ form.ia2_att }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> III-IA-theory:</label>
+        <div class="col-sm-4">
+            {{ form.ia3_th }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> III-IA-practical:</label>
+        <div class="col-sm-4">
+            {{ form.ia3_pr }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> III-IA-Attendance:</label>
+        <div class="col-sm-4">
+            {{ form.ia3_att }}
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> University Exam %:</label>
+        <div class="col-sm-4">
+            {{ form.university_exam }}
+        </div>
+    </div>
+        <div class="form-group row">
+        <label class="col-sm-1 col-form-label"></label>
+        <div class="col-sm-4">
+           <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
